@@ -1,12 +1,14 @@
 platform :ios, '12.1'
 use_frameworks!
 
+# Comment/uncomment 7th line to add/remove additional framework. Pods "reload" needed ("rake pods")
 target 'JustAnApp' do
-    # External setup
-    pod "MultiSDK", :git => 'git@github.com:amichnia/optional-frameworks-tests.git'
-    pod "MultiSDK/AdditionalSDK", :git => 'git@github.com:amichnia/optional-frameworks-tests.git'
-
-    # Develpoment - local setup, uncomment for tests only
-    # pod "MultiSDK", :path => './..'
-    # pod "MultiSDK/AdditionalSDK", :path => './..'
+    pod "MultiSDK", :git => 'git@github.com:amichnia/Swift-framework-with-optional-frameworks.git'
+    pod "MultiSDK/AdditionalSDK", :git => 'git@github.com:amichnia/Swift-framework-with-optional-frameworks.git'
 end
+
+# Develpoment - local setup, uncomment for tests only
+# target 'JustAnApp' do
+#     pod "MultiSDK", :path => './..'
+#     pod "MultiSDK/AdditionalSDK", :path => './..'
+# end
