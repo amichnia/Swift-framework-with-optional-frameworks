@@ -1,0 +1,20 @@
+PODS:
+  - MultiSDK (0.1.0):
+    - MultiSDK/MainSDK (= 0.1.0)
+  - MultiSDK/AdditionalSDK (0.1.0)
+  - MultiSDK/MainSDK (0.1.0)
+
+DEPENDENCIES:
+  - MultiSDK (from `../SDKProducts`)
+  - MultiSDK/AdditionalSDK (from `../SDKProducts`)
+
+EXTERNAL SOURCES:
+  MultiSDK:
+    :path: "../SDKProducts"
+
+SPEC CHECKSUMS:
+  MultiSDK: 8f4be1f733ae32f0ce1060507f68039a59107151
+
+PODFILE CHECKSUM: 4f6bf0056b13f80b08d31f8386db59ff633e3edb
+
+COCOAPODS: 1.6.1

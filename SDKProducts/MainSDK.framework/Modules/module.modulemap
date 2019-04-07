@@ -1,0 +1,11 @@
+framework module MainSDK {
+  umbrella header "MainSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module MainSDK.Swift {
+    header "MainSDK-Swift.h"
+    requires objc
+}

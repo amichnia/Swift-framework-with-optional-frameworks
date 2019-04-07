@@ -1,0 +1,14 @@
+platform :ios, '12.1'
+use_frameworks!
+
+target 'JustAnApp' do
+    # Uncomment content of one of the options
+
+    # Option 1 - Just MainSDK
+    pod "MultiSDK", :path => '../SDKProducts'
+
+    # Option 2 - Main and AdditionalSDK together
+    # pod "MultiSDK", :path => '../SDKProducts' # This is not actually required, as subspec already covers MainSDK
+    pod "MultiSDK/AdditionalSDK", :path => '../SDKProducts'
+
+end
