@@ -42,3 +42,11 @@ To make weak link between frameworks, you can select optional in linked framewor
 Just a Container for "vendored_frameworks". They are compiled only for simulator now.
 
 In the "final setup", when making similar setup to ship your frameworks, you'd probably be using fat binaries, so your users would be able to build for both devices and simulators.
+
+## Summary + Where to go from Where
+
+It seems, that when using Objective-C, it is possible to take advantage of weak linking (and thus "optional" frameworks). It seems it is impossible though to do that with Swift only setup.
+
+__Potential Improvements:__ Currently, the MainSDK "Interop" objc files are public. You can make them "private", and still use from Swift, using these hints:
+
+[https://medium.com/@amichnia_31596/creating-swift-framework-with-private-objective-c-members-the-good-the-bad-and-the-ugly-4d726386644b](https://medium.com/@amichnia_31596/creating-swift-framework-with-private-objective-c-members-the-good-the-bad-and-the-ugly-4d726386644b)
