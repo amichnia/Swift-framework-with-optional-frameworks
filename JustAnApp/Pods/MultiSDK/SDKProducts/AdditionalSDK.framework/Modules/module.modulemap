@@ -1,0 +1,11 @@
+framework module AdditionalSDK {
+  umbrella header "AdditionalSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module AdditionalSDK.Swift {
+    header "AdditionalSDK-Swift.h"
+    requires objc
+}

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C7D3728044CF12E7DA13EB0C /* Pods_JustAnApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B822CE692DCB1DF7222642 /* Pods_JustAnApp.framework */; };
+		34EBE9F51773E02DE6A7EBC6 /* Pods_JustAnApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9A5786D3A13655F7467EE9 /* Pods_JustAnApp.framework */; };
 		CC968D02225A0E7E003523DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC968D01225A0E7E003523DB /* AppDelegate.swift */; };
 		CC968D04225A0E7E003523DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC968D03225A0E7E003523DB /* ViewController.swift */; };
 		CC968D07225A0E7E003523DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC968D05225A0E7E003523DB /* Main.storyboard */; };
@@ -16,7 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		306B577CDF5321D47ABDF347 /* Pods-JustAnApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustAnApp.debug.xcconfig"; path = "Target Support Files/Pods-JustAnApp/Pods-JustAnApp.debug.xcconfig"; sourceTree = "<group>"; };
+		14E391DB50B441136494FDB8 /* Pods-JustAnApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustAnApp.debug.xcconfig"; path = "Target Support Files/Pods-JustAnApp/Pods-JustAnApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AF9A5786D3A13655F7467EE9 /* Pods_JustAnApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustAnApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3DF768A3A2D1557C1E096C4 /* Pods-JustAnApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustAnApp.release.xcconfig"; path = "Target Support Files/Pods-JustAnApp/Pods-JustAnApp.release.xcconfig"; sourceTree = "<group>"; };
 		CC968CFE225A0E7E003523DB /* JustAnApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustAnApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC968D01225A0E7E003523DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC968D03225A0E7E003523DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +26,6 @@
 		CC968D08225A0E80003523DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC968D0B225A0E80003523DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC968D0D225A0E80003523DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1385C5F06E714A14A64FE1F /* Pods-JustAnApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustAnApp.release.xcconfig"; path = "Target Support Files/Pods-JustAnApp/Pods-JustAnApp.release.xcconfig"; sourceTree = "<group>"; };
-		D5B822CE692DCB1DF7222642 /* Pods_JustAnApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustAnApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +33,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D3728044CF12E7DA13EB0C /* Pods_JustAnApp.framework in Frameworks */,
+				34EBE9F51773E02DE6A7EBC6 /* Pods_JustAnApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C2C875F05CB696E4A74BBC13 /* Frameworks */ = {
+		5A58EE1C4283E9161CAC7FBB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D5B822CE692DCB1DF7222642 /* Pods_JustAnApp.framework */,
+				AF9A5786D3A13655F7467EE9 /* Pods_JustAnApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -54,7 +54,7 @@
 				CC968D00225A0E7E003523DB /* JustAnApp */,
 				CC968CFF225A0E7E003523DB /* Products */,
 				D20C66C1358E93C3612B2FC6 /* Pods */,
-				C2C875F05CB696E4A74BBC13 /* Frameworks */,
+				5A58EE1C4283E9161CAC7FBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,8 +82,8 @@
 		D20C66C1358E93C3612B2FC6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				306B577CDF5321D47ABDF347 /* Pods-JustAnApp.debug.xcconfig */,
-				D1385C5F06E714A14A64FE1F /* Pods-JustAnApp.release.xcconfig */,
+				14E391DB50B441136494FDB8 /* Pods-JustAnApp.debug.xcconfig */,
+				C3DF768A3A2D1557C1E096C4 /* Pods-JustAnApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -95,11 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC968D10225A0E80003523DB /* Build configuration list for PBXNativeTarget "JustAnApp" */;
 			buildPhases = (
-				DD9CB2AF0A4657374126E909 /* [CP] Check Pods Manifest.lock */,
+				53C2076AC1C1E6CAEBAC688B /* [CP] Check Pods Manifest.lock */,
 				CC968CFA225A0E7E003523DB /* Sources */,
 				CC968CFB225A0E7E003523DB /* Frameworks */,
 				CC968CFC225A0E7E003523DB /* Resources */,
-				060DACEE1F433977B4DE19D6 /* [CP] Embed Pods Frameworks */,
+				4A9C7DC7BDB02D8F9DAE4BC4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,7 +157,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		060DACEE1F433977B4DE19D6 /* [CP] Embed Pods Frameworks */ = {
+		4A9C7DC7BDB02D8F9DAE4BC4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -166,8 +166,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JustAnApp/Pods-JustAnApp-frameworks.sh",
-				"${PODS_ROOT}/../../SDKProducts/AdditionalSDK.framework",
-				"${PODS_ROOT}/../../SDKProducts/MainSDK.framework",
+				"${PODS_ROOT}/MultiSDK/SDKProducts/AdditionalSDK.framework",
+				"${PODS_ROOT}/MultiSDK/SDKProducts/MainSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -181,7 +181,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustAnApp/Pods-JustAnApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DD9CB2AF0A4657374126E909 /* [CP] Check Pods Manifest.lock */ = {
+		53C2076AC1C1E6CAEBAC688B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -355,7 +355,7 @@
 		};
 		CC968D11225A0E80003523DB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 306B577CDF5321D47ABDF347 /* Pods-JustAnApp.debug.xcconfig */;
+			baseConfigurationReference = 14E391DB50B441136494FDB8 /* Pods-JustAnApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -379,7 +379,7 @@
 		};
 		CC968D12225A0E80003523DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1385C5F06E714A14A64FE1F /* Pods-JustAnApp.release.xcconfig */;
+			baseConfigurationReference = C3DF768A3A2D1557C1E096C4 /* Pods-JustAnApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

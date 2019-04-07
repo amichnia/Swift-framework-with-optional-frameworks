@@ -1,0 +1,40 @@
+{
+  "name": "MultiSDK",
+  "version": "0.1.0",
+  "summary": "A short description of MultiSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/amichnia/MultiSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Andrzej Michnia": "amichnia@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/amichnia/MultiSDK.git",
+    "tag": "0.1.0"
+  },
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC -lc++ -lz",
+    "CLANG_MODULES_AUTOLINK": "YES"
+  },
+  "platforms": {
+    "ios": "12.1"
+  },
+  "default_subspecs": "MainSDK",
+  "subspecs": [
+    {
+      "name": "MainSDK",
+      "vendored_frameworks": [
+        "SDKProducts/MainSDK.framework"
+      ]
+    },
+    {
+      "name": "AdditionalSDK",
+      "vendored_frameworks": [
+        "SDKProducts/AdditionalSDK.framework"
+      ]
+    }
+  ]
+}

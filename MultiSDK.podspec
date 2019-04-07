@@ -24,10 +24,10 @@ Pod::Spec.new do |s|
     s.default_subspec  = "MainSDK"
 
     s.subspec 'MainSDK' do |subspec|
-        subspec.vendored_frameworks = ['MainSDK.framework']
+        subspec.vendored_frameworks = ['SDKProducts/MainSDK.framework']
     end
 
     s.subspec 'AdditionalSDK' do |subspec|
-        subspec.vendored_frameworks = ['AdditionalSDK.framework']
+        subspec.vendored_frameworks = ['SDKProducts/AdditionalSDK.framework']
     end
 end

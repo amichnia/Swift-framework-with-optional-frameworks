@@ -2,13 +2,11 @@ platform :ios, '12.1'
 use_frameworks!
 
 target 'JustAnApp' do
-    # Uncomment content of one of the options
+    # External setup
+    pod "MultiSDK", :git => 'git@github.com:amichnia/optional-frameworks-tests.git'
+    pod "MultiSDK/AdditionalSDK", :git => 'git@github.com:amichnia/optional-frameworks-tests.git'
 
-    # Option 1 - Just MainSDK
-    pod "MultiSDK", :path => '../SDKProducts'
-
-    # Option 2 - Main and AdditionalSDK together
-    # pod "MultiSDK", :path => '../SDKProducts' # This is not actually required, as subspec already covers MainSDK
-    pod "MultiSDK/AdditionalSDK", :path => '../SDKProducts'
-
+    # Develpoment - local setup, uncomment for tests only
+    # pod "MultiSDK", :path => './..'
+    # pod "MultiSDK/AdditionalSDK", :path => './..'
 end
