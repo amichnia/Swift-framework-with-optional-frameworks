@@ -18,27 +18,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8S3-Oi-4F3">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="TEST"/>
-                                <connections>
-                                    <action selector="statusAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="NcT-Wl-nEb"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Khh-xz-yen">
+                                <rect key="frame" x="24" y="64" width="327" height="94"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert a number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dnQ-7J-AUB">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8S3-Oi-4F3">
+                                        <rect key="frame" x="0.0" y="36" width="327" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="GIV-L5-BoB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="INSPECT"/>
+                                        <connections>
+                                            <action selector="statusAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="NcT-Wl-nEb"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="254" verticalHuggingPriority="255" verticalCompressionResistancePriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtu-7L-kkP">
+                                        <rect key="frame" x="0.0" y="94" width="327" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="8S3-Oi-4F3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TX9-cF-DvR"/>
-                            <constraint firstItem="8S3-Oi-4F3" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="X75-HB-hml"/>
-                            <constraint firstItem="8S3-Oi-4F3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gIh-rA-xuy"/>
-                            <constraint firstItem="8S3-Oi-4F3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="okB-tT-MxC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Khh-xz-yen" secondAttribute="trailing" constant="24" id="Gm6-5m-ggu"/>
+                            <constraint firstItem="Khh-xz-yen" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="xqH-qP-OaH"/>
+                            <constraint firstItem="Khh-xz-yen" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="yiP-ym-lAz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="D7L-cz-dVX" appends="YES" id="cqG-yg-0sA"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="numberField" destination="dnQ-7J-AUB" id="CPV-o1-pza"/>
+                        <outlet property="statusLabel" destination="Dtu-7L-kkP" id="ibe-zz-1MP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="D7L-cz-dVX">
+                    <connections>
+                        <action selector="dismissKeyboard" destination="BYZ-38-t0r" id="Akr-nH-bbJ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>

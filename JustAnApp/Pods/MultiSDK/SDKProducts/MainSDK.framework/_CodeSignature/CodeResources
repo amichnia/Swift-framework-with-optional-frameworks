@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/AdditionFrameworkInterop.h</key>
 		<data>
-		/Ysc06Mju520WVYnvLtDpqNH7LQ=
+		2snyuCGrCMFHxYaoREWqY7GdxXE=
 		</data>
 		<key>Headers/MainSDK-Swift.h</key>
 		<data>
-		sI90zfdOBQqJN2PNqb36hxFWURs=
+		pf0mYRF3uNw8/jJ64bb9Q9MBjbA=
 		</data>
 		<key>Headers/MainSDK.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/MainSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		OSz899a41lKA63YffJ+on8SWcs8=
+		rapfe6YLJSXoxaCJ8qaYaVQjkrc=
 		</data>
 		<key>Modules/MainSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		VcCll/2JxtP20HE0TYYMzN5b1CA=
+		bHGH4hzVkCoKhhrB2aWdenCmtDk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,14 +39,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			flFvBrgU7dSFBbN042uOnEdJQmdCU6gnbJiQVKfcAWE=
+			n70+6kQuFUW2SFfmMC/0sjjNBYoxfJ9DHeU0cVQoPsA=
 			</data>
 		</dict>
 		<key>Headers/MainSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+pMTL1fVxHRBWIB3Cq7bz90s/pInu17JRtR5qBQk7Lo=
+			7YdsqdyUKOpOw6NBBKT7I8O+nivDeFNUog3KQ+mDBqk=
 			</data>
 		</dict>
 		<key>Headers/MainSDK.h</key>
@@ -60,14 +60,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W7l7e6LoiInHIoRKqTAu53IGPCA+Jd8KEAAUHuxfPwo=
+			ONTlnsohRnpzSsTRPKUMGRYIpn9AkBE9JFoVQd23fvU=
 			</data>
 		</dict>
 		<key>Modules/MainSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jIxNmOk6Gc/96DlbC3yEJiA9S99RGwW1k+QFcee49EM=
+			vOssduAzAhPmC1KS2QkaLMM0nrIBIt3hOJ3MizhFDyU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

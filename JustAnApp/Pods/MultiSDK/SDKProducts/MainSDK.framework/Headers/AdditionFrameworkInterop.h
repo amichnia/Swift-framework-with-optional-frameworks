@@ -7,15 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MainSDK/MainSDK-Swift.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AdditionFrameworkInterop : NSObject
 
+@property (weak, nonatomic) id<InteropDelegate> delegate;
+
 + (BOOL)additionalModuleAvailable;
 
 - (instancetype)init;
-- (void)performWork;
+- (void)inspectWithNumber:(NSInteger)number;
 
 @end
 

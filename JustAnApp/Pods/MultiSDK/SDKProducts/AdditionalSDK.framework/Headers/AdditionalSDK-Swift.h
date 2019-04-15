@@ -182,18 +182,24 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-SWIFT_PROTOCOL("_TtP13AdditionalSDK18AdditionalDelegate_")
-@protocol AdditionalDelegate
-- (void)doSomething;
-- (void)doSomethingElse;
+SWIFT_CLASS("_TtC13AdditionalSDK12AdditonalSDK")
+@interface AdditonalSDK : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@protocol PrimeNumberCheckerDelegate;
+
+SWIFT_CLASS("_TtC13AdditionalSDK18PrimeNumberChecker")
+@interface PrimeNumberChecker : NSObject
+@property (nonatomic, strong) id <PrimeNumberCheckerDelegate> _Nullable delegate;
+- (void)inspectWithNumber:(NSInteger)number;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-SWIFT_CLASS("_TtC13AdditionalSDK12AdditonalSDK")
-@interface AdditonalSDK : NSObject
-@property (nonatomic, strong) id <AdditionalDelegate> _Nullable delegate;
-- (void)performWork;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+SWIFT_PROTOCOL("_TtP13AdditionalSDK26PrimeNumberCheckerDelegate_")
+@protocol PrimeNumberCheckerDelegate
+- (void)didFinishInspectingWithNumber:(NSInteger)number isPrime:(BOOL)isPrime;
 @end
 
 #if __has_attribute(external_source_symbol)
