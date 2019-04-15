@@ -9,53 +9,39 @@
 #import "AdditionFrameworkInterop.h"
 @import AdditionalSDK;
 
-@interface AdditionFrameworkInterop() <AdditionalDelegate>
+@interface AdditionFrameworkInterop() <PrimeNumberCheckerDelegate>
 
-@property (strong, nonatomic) AdditonalSDK *sdkInstance;
+@property (strong, nonatomic) PrimeNumberChecker *primeChecker;
 
 @end
 
 @implementation AdditionFrameworkInterop
 
-+ (BOOL)additionalModuleAvailable
-{
-    if ([AdditonalSDK class])
-    {
++ (BOOL)additionalModuleAvailable {
+    if ([AdditonalSDK class]) {
         return YES;
-    }
-    else
-    {
+    } else {
         return NO;
     }
 }
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
-    if (self && [AdditionFrameworkInterop additionalModuleAvailable])
-    {
-        _sdkInstance = [[AdditonalSDK alloc] init];
-        [_sdkInstance setDelegate:self];
+    if (self && [AdditionFrameworkInterop additionalModuleAvailable]) {
+        _primeChecker = [[PrimeNumberChecker alloc] init];
+        [_primeChecker setDelegate:self];
     }
     return self;
 }
 
-- (void)performWork
-{
-    if ([AdditionFrameworkInterop additionalModuleAvailable])
-    {
-        [_sdkInstance performWork];
+- (void)inspectWithNumber:(NSInteger)number {
+    if ([AdditionFrameworkInterop additionalModuleAvailable]) {
+        [_primeChecker inspectWithNumber:number];
     }
 }
 
-- (void)doSomething
-{
-    NSLog(@"DID SOMETHING");
-}
-
-- (void)doSomethingElse
-{
-    NSLog(@"DID SOMETHING ELSE");
+- (void)didFinishInspectingWithNumber:(NSInteger)number isPrime:(BOOL)isPrime {
+    [_delegate didFinishInspectingWithNumber:number isPrime:isPrime];
 }
 
 @end
