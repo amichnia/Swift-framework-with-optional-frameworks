@@ -3,8 +3,8 @@ use_frameworks!
 
 # Comment/uncomment 7th line to add/remove additional framework. Pods "reload" needed ("rake pods")
 target 'JustAnApp' do
-    pod "MultiSDK", :git => 'git@github.com:amichnia/Swift-framework-with-optional-frameworks.git', :tag => '0.1.0'
-    pod "MultiSDK/AdditionalSDK", :git => 'git@github.com:amichnia/Swift-framework-with-optional-frameworks.git', :tag => '0.1.0'
+    pod "MultiSDK", :git => 'https://github.com/amichnia/Swift-framework-with-optional-frameworks.git', :tag => '0.1.0'
+    pod "MultiSDK/AdditionalSDK", :git => 'https://github.com/amichnia/Swift-framework-with-optional-frameworks.git', :tag => '0.1.0'
 end
 
 # Develpoment - local setup, uncomment for tests only

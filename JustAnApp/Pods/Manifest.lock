@@ -5,22 +5,22 @@ PODS:
   - MultiSDK/MainSDK (0.1.0)
 
 DEPENDENCIES:
-  - "MultiSDK (from `git@github.com:amichnia/Swift-framework-with-optional-frameworks.git`, tag `0.1.1`)"
-  - "MultiSDK/AdditionalSDK (from `git@github.com:amichnia/Swift-framework-with-optional-frameworks.git`, tag `0.1.1`)"
+  - MultiSDK (from `https://github.com/amichnia/Swift-framework-with-optional-frameworks.git`, tag `0.1.0`)
+  - MultiSDK/AdditionalSDK (from `https://github.com/amichnia/Swift-framework-with-optional-frameworks.git`, tag `0.1.0`)
 
 EXTERNAL SOURCES:
   MultiSDK:
-    :git: "git@github.com:amichnia/Swift-framework-with-optional-frameworks.git"
-    :tag: 0.1.1
+    :git: https://github.com/amichnia/Swift-framework-with-optional-frameworks.git
+    :tag: 0.1.0
 
 CHECKOUT OPTIONS:
   MultiSDK:
-    :git: "git@github.com:amichnia/Swift-framework-with-optional-frameworks.git"
-    :tag: 0.1.1
+    :git: https://github.com/amichnia/Swift-framework-with-optional-frameworks.git
+    :tag: 0.1.0
 
 SPEC CHECKSUMS:
   MultiSDK: 1d4dcad1a04d055d56a279adaafad5d81cb46963
 
-PODFILE CHECKSUM: 8894087f3e006792d72a966fddc0cea7e6ca3c2b
+PODFILE CHECKSUM: 3d731af9d95b78af7e7e45a1c6deba8bcc72907a
 
 COCOAPODS: 1.6.1
